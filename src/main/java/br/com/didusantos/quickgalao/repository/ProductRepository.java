@@ -11,7 +11,4 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
 
     Optional<Product> findById(Integer id);
 
-    Optional<Product> findByPriceStartingWithAndPriceEndingWith(double priceStartingWith, double priceEndingWith);
-
-    Optional<Product> findByQuantityStartingWithAndQuantityEndingWith(int quantityStartingWith, int quantityEndingWith);
 }

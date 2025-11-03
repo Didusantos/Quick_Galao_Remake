@@ -11,10 +11,6 @@ public interface SaleItemRepository extends JpaRepository<SaleItem, Integer> {
 
     Optional<SaleItem> findByProductId(int productId);
 
-    Optional<SaleItem> findByClientId(int clientId);
 
-    Optional<SaleItem> findByClientIdAndProductId(int clientId, int productId);
-
-    Optional<SaleItem> findByRegistrationUnitPriceStartingWithAndRegistrationUnitPriceEndingWith(int priceStartingWith, int priceEndingWith);
 
 }

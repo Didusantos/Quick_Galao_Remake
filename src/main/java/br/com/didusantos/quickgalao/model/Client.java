@@ -15,8 +15,8 @@ import java.util.UUID;
 public class Client {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private @Getter @Setter long id;
+    @GeneratedValue(strategy = GenerationType.UUID)
+    private @Getter @Setter UUID id;
 
     @Column(name = "NAME", nullable = false)
     private @Getter @Setter String name;
